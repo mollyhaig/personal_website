@@ -1,0 +1,82 @@
+body {
+
+	background-color: #000000;
+	color: #A9A9A9;
+}
+h1 {
+	font-family: Garamond, Georgia, serif;
+	font-weight: 100;
+	font-size: 4em;
+	padding: 5%;
+}
+h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	padding: 5%;
+}
+
+
+
+.responsive-image {
+	filter: gray-scale;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 5%;
+}
+
+
+.responsive-image {
+	max-width: 25%;
+}
+
+//XXXXXX why isn't flexbox working? why can't I apply filters?
+
+img{
+	filter: gray-scale;
+}
+
+.cell img {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+@media screen and print (min-width: 600px) {
+	.grid{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.cell {
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.cell {
+		width: calc (100% / 3);
+	}
+}
+
+.cell {
+	margin: 3%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        background-color: turquoise;
+    }
+	h1 { 
+		font-size: 2em;
+	}
+}
+	
+
