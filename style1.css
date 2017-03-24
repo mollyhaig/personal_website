@@ -1,50 +1,140 @@
 body {
-
 	background-color: #000000;
 	color: #A9A9A9;
+	font-family: Akkurat, Helvetica, Arial, sans-serif;
+	padding: 2%;
+	line-height: 150%;
 }
+
 h1 {
-	font-family: Garamond, Georgia, serif;
-	font-weight: 100;
+	font-family: Akkurat, Helvetica, Arial, sans-serif;
+	font-weight: light;
 	font-size: 4em;
-	padding: 5%;
+	color: #404040;
+	line-height: 100%;
+/*	padding: 2%;*/
 }
+
+
 h2 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Quadraat, Garamond, Georgia, serif;
 	font-weight: 100;
-	padding: 5%;
+	font-size: 2.5em;
+	color: #696969;
+	line-height: 110%;
+/*	padding: 2%;*/
 }
 
 
 
-.responsive-image {
-	filter: gray-scale;
-}
+
 
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
-	padding: 5%;
+/*	padding: 2%;*/
 }
 
+.grid {
+	display: flex;
+	flex-flow: row wrap;
+/*	justify-content: flex-start;*/
+}
+
+.cell {
+/*	flex: 0 1 calc(25% - 8px);
+	padding: 4px;*/
+	width: calc(25% - 8px);
+	padding: 4px;
+}
 
 .responsive-image {
-	max-width: 25%;
+	filter: opacity(100%);
+	width: 100%;
+	display: block;
 }
 
-//XXXXXX why isn't flexbox working? why can't I apply filters?
-
-img{
-	filter: gray-scale;
+.responsive-image:hover {
+	filter: opacity(50%);
 }
 
+
+@media screen and (max-width: 750px) {
+
+	.grid {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.cell {
+		width: calc(100%/3 - 8px);
+	}
+}
+
+	@media only screen and (max-width: 600px) {
+
+		.grid {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		.cell {
+			width: calc(50% - 8px);
+		}
+		
+/*		.h1 {
+			font-family: Akkurat, Helvetica, Arial, sans-serif;
+			font-weight: light;
+			font-size: 2em;
+			color: #303030;
+			line-height: 100%;
+		}*/
+		
+/*		why doesn't that media query work??*/
+	}
+
+	@media only screen and (max-width: 410px) {
+
+		.grid {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		.cell {
+			width: calc(100% - 8px);
+		}
+	}
+	
+	
+
+/*@media screen and print (max-width: 800px) {
+
+
+	body {
+		background-color: turquoise;
+	}
+	}.grid {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.cell {
+		width: calc(100%/3 - 8px);
+		padding: 4px;
+	}
+
+}*/
+
+/*.single-image {
+	width: 100%
+	display: block;
+}*/
+
+
+/*
 .cell img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 }
-
-@media screen and print (min-width: 600px) {
+*/
+/*@media screen and print (min-width: 600px) {
 	.grid{
 		display: flex;
 		flex-wrap: wrap;
@@ -53,8 +143,8 @@ img{
 	.cell {
 		width: 25%;
 	}
-}
-
+}*/
+/*
 @media screen and (min-width: 1000px) {
 	.cell {
 		width: calc (100% / 3);
@@ -63,10 +153,10 @@ img{
 
 .cell {
 	margin: 3%;
-}
+}*/
 
 
-
+/*
 
 
 
@@ -74,9 +164,10 @@ img{
     body {
         background-color: turquoise;
     }
-	h1 { 
+	h1 {
 		font-size: 2em;
 	}
 }
-	
 
+
+*/
