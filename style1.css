@@ -1,33 +1,45 @@
 body {
-	background-color: #000000;
+	background-color: #faf6f0;
 	color: #A9A9A9;
 	font-family: Akkurat, Helvetica, Arial, sans-serif;
-	padding: 2%;
+/*	padding: 2%;*/
 	line-height: 150%;
 }
 
 h1 {
+	text-align: center;
 	font-family: Akkurat, Helvetica, Arial, sans-serif;
-	font-weight: light;
-	font-size: 4em;
-	color: #404040;
+    font-size: 5em;
+	color: #ffffff;
 	line-height: 100%;
+	position: absolute;
+	top:155px;
+
+	width: 100%;
 /*	padding: 2%;*/
 }
 
 
 h2 {
-	font-family: Quadraat, Garamond, Georgia, serif;
+    text-align: center;
+	font-family: Garamond, Georgia, serif;
 	font-weight: 100;
-	font-size: 2.5em;
-	color: #696969;
+	font-size: 3.5em;
+	font-style: italic;
+	color: #005261;
 	line-height: 110%;
+	position: absolute;
+	top:240px;
+	width: 100%;
 /*	padding: 2%;*/
 }
 
 
-
-
+/*.textonimage {
+	position: relative;
+	width: 100%;
+}
+*/
 
 .container {
 	margin: 0 auto;
